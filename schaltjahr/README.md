@@ -8,7 +8,7 @@ Im Folgenden werden wir eine Pythonfunktion schreiben, die entscheidet, ob ein J
 Finde zunächst heraus, wie ein Schaltjahr definiert ist.
 Speichere Deine Erkenntnisse in der Textdatei `pseudocode.txt`.
 
-{% next    "Schritt 2: Pseudocode zu Python" %}
+{% next "Schritt 2: Pseudocode zu Python" %}
 
 Benutze in der Konsole den Befehl `cp` (copy) um aus der Datei `pseudocode.txt` die Datei `leapyear.py` zu machen. Benutze dafür den Befehl `cp pseudocode.txt leapyear.py`.
 
@@ -98,6 +98,8 @@ def is_leapyear(year):
 
     return True
 ```
+{% endspoiler %}
+
 
 {% next "Schritt 6: Testen von einfachen Fällen"  %}
 
