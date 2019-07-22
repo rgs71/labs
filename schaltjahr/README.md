@@ -88,6 +88,7 @@ Per Definition kommen Schaltjahre (fast immer) alle vier Jahre vor. Ergänzen Si
 def is_leapyear(year):
 
     # Die durch 4 ganzzahlig teilbaren Jahre sind Schaltjahre.
+    # Falls die Jahreszahl nicht durch 4 teilbar ist, kann es kein Schaltjahr sein!
     if year % 4 > 0:
         return False
 
