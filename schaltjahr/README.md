@@ -53,3 +53,17 @@ D.h. die Zahl 124465 ist durch 11 teilbar. Nachweis liefert dann auch
 11315
 ```
 {% endspoiler %}
+
+{% next "Funktionsdefinition" %}
+
+Als erstes werden wir in der Datei `leapyear.py` vor allen Kommentaren durch die Zeile `def is_leapyear(year):` die Funktion `is_leapyear` definieren, die beim Aufruf einen Parameter `year` erwartet. Damit die Datei besser lesbar ist, rücken wir die Kommentare um 4 Leerzeichen ein. Am einfachsten gelingt dies, indem man alles markiert und `TAB` drückt. 
+Unter allen Kommentaren ergänzen wir noch `return True`, was dafür sorgt, dass unsere Funktion unabhängig vom Parameter `year` immer `True` als Rückgabe wert liefert.
+
+```python
+def is_leapyear(year):
+    # 
+    # auskommentierter Text
+    #
+
+    return True
+```
