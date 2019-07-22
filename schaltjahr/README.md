@@ -34,6 +34,11 @@ def is_leapyear(year):
 ```
 {% endspoiler %}
 
+{% next "Schritt 4: Testen der Funktion"  %}
+
+Rufen wir jetzt im Terminal das Programm über `python main.py` auf, werden wir nach dem Jahr gefragt. Überprüfe, dass unabhängig von Eingabe immer ein Schaltjahr angegeben wird. Dies müssen wir jetzt nach und nach ändern.
+
+
 {% next "Wiederholung: Division mit Python" %}
 Rufe zunächst im Terminal `python`auf um in den REPL (Read-Evaluate-Print-Loop) zu kommen. Führe dort für verschiedene Zahlen Aufgaben wie
 `16 / 4`, `25 // 4`und `27 % 8` aus. Welche der Divisionen verrät uns am ehesten, was wir für Schaltjahre wissen müssen?
@@ -71,3 +76,24 @@ D.h. die Zahl 124465 ist durch 11 teilbar. Nachweis liefert dann auch
 11315
 ```
 {% endspoiler %}
+
+
+{% next "Schritt 5: Einfache Schaltjahre"  %}
+
+Per Definition kommen Schaltjahre (fast immer) alle vier Jahre vor. Ergänzen Sie an entsprechender Stelle eine geeignte Überprüfung.
+
+{% spoiler "Lösung" %}
+
+```python
+def is_leapyear(year):
+
+    # Die durch 4 ganzzahlig teilbaren Jahre sind Schaltjahre.
+    if year % 4 > 0:
+        return False
+
+    # Säkularjahre, also die Jahre, die ein Jahrhundert abschließen (z. B. 1800, 1900, 2100 und 2200) sind keine Schaltjahre.
+
+    # Schließlich sind die durch 400 ganzzahlig teilbaren Säkularjahre doch Schaltjahre. Damit sind z. B. 1600, 2000 und 2400 jeweils wieder Schaltjahre.
+
+    return True
+```
