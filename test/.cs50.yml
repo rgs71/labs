@@ -1,4 +1,5 @@
 lab50:
   files:
     - !exclude "*"
-    - !include leapyear.py
+    - !include pseudocode.txt
+    - !include main.py
