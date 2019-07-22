@@ -39,7 +39,7 @@ Rufe zunächst im Terminal `python`auf um in den REPL (Read-Evaluate-Print-Loop)
 `16 / 4`, `25 // 4`und `27 % 8` aus. Welche der Divisionen verrät uns am ehesten, was wir für Schaltjahre wissen müssen?
 
 
-{% spoiler %}
+{% spoiler "Lösung" %}
 + Der Operator `/`führt eine *echte* Division aus, dabei wird das Ergebnis auch in einen Dezimalbruch umgewandelt.
 ```python
 >>> 24 / 4
