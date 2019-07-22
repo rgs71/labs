@@ -15,7 +15,7 @@ Benutze in der Konsole den Befehl `cp` (copy) um aus der Datei `pseudocode.txt` 
 Damit es keine Fehler bei Python gibt, ist es außerdem notwenig durch `#`-Symbole vor jede Zeile, diese auszukommentieren.
 `# Dies ist ein Kommentar`
 
-{% next "Funktionsdefinition" %}
+{% next "Schritt 3: Funktionsdefinition" %}
 
 Als erstes werden wir in der Datei `leapyear.py` vor allen Kommentaren durch die Zeile `def is_leapyear(year):` die Funktion `is_leapyear` definieren, die beim Aufruf einen Parameter `year` erwartet. Damit die Datei besser lesbar ist, rücken wir die Kommentare um 4 Leerzeichen ein. Am einfachsten gelingt dies, indem man alles markiert und `TAB` drückt. 
 Unter allen Kommentaren ergänzen wir noch `return True`, was dafür sorgt, dass unsere Funktion unabhängig vom Parameter `year` immer `True` als Rückgabe wert liefert.
