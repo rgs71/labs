@@ -1,12 +1,11 @@
 from leapyear import is_leapyear
-    
-    
- 
- if __name__ == '__main__':
+
+if __name__ == "__main__":
     year = int(input("Jahr: "))
     if not is_leapyear(year):
-          addition = 'k'
+        addition = "k"
     else:
-          addition = ''
-    
+        addition = ""
+
     print(f"Das Jahr {year} war {addition}ein Schaltjahr")
+
