@@ -98,3 +98,38 @@ def is_leapyear(year):
 
     return True
 ```
+
+{% next "Schritt 6: Testen von einfachen Fällen"  %}
+
+Jetzt sollte mit dem Aufruf von `python main.py` für viele Jahre korrekt angegeben werden, dass es sich *nicht* um Schaltjahre handelt. Allerdings wird für die sogenannten Säkularjahre wie 1900 fälschlicher auch angegeben, dass es Schaltjahre sind.
+
+{% next "Schritt 7: Vervollständigen der anderen Fälle" %}
+
+Durch entsprechende Fallunterscheidungen müssen jetzt noch die anderen Fälle berichtigt werden.
+
+{% spoiler "Lösung" %}
+```python
+def is_leapyear(year):
+
+    # Die durch 4 ganzzahlig teilbaren Jahre sind Schaltjahre.
+    # Falls die Jahreszahl nicht durch 4 teilbar ist, kann es kein Schaltjahr sein!
+    if year % 4 > 0:
+        return False
+    # Jahrezahl ist durch 4 teilbar.
+    year //= 4
+    # Säkularjahre, also die Jahre, die ein Jahrhundert abschließen (z. B. 1800, 1900, 2100 und 2200) sind keine Schaltjahre.
+    # Wenn es ursprünglich kein Säkularjahr war, dann kann man jetzt nicht durch 25 teilen.
+    if year % 25 > 0:
+        return True
+    # Jahreszahl ist doch durch 25 teilbar
+    year //= 25
+
+    # Schließlich sind die durch 400 ganzzahlig teilbaren Säkularjahre doch Schaltjahre. Damit sind z. B. 1600, 2000 und 2400 jeweils wieder Schaltjahre.
+    # Wenn nicht durch 4 teilbar, ist es kein durch 400 teilbares Jahr
+    if year % 4 > 0:
+        return False
+    # Doch durch 4 und damit durch 400 teilbar
+
+    return True
+```
+{% endspoiler %}
