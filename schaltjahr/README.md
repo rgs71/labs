@@ -59,11 +59,16 @@ D.h. die Zahl 124465 ist durch 11 teilbar. Nachweis liefert dann auch
 Als erstes werden wir in der Datei `leapyear.py` vor allen Kommentaren durch die Zeile `def is_leapyear(year):` die Funktion `is_leapyear` definieren, die beim Aufruf einen Parameter `year` erwartet. Damit die Datei besser lesbar ist, rücken wir die Kommentare um 4 Leerzeichen ein. Am einfachsten gelingt dies, indem man alles markiert und `TAB` drückt. 
 Unter allen Kommentaren ergänzen wir noch `return True`, was dafür sorgt, dass unsere Funktion unabhängig vom Parameter `year` immer `True` als Rückgabe wert liefert.
 
+{% spoiler "Codebeispiel" %}
 ```python
 def is_leapyear(year):
-    # 
-    # auskommentierter Text
-    #
+
+    # Die durch 4 ganzzahlig teilbaren Jahre sind Schaltjahre.
+
+    # Säkularjahre, also die Jahre, die ein Jahrhundert abschließen (z. B. 1800, 1900, 2100 und 2200) sind keine Schaltjahre.
+    
+    # Schließlich sind die durch 400 ganzzahlig teilbaren Säkularjahre doch Schaltjahre. Damit sind z. B. 1600, 2000 und 2400 jeweils wieder Schaltjahre.
 
     return True
 ```
+{% endspoiler %}
