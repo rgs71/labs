@@ -1,8 +1,4 @@
-def is_leapyear(year):
-
-  # TODO
-  
-    return True
+from leapyear import is_leapyear
     
     
  
