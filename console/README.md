@@ -1,32 +1,24 @@
 # Arbeiten mit der CS50 Sandbox
 
-Hier lernst Du den Umgang mit der CS50 Sandbox, die wir in Zukunft als Programmierumgebung, die für alle exakt gleich ist, nutzen wollen, damitdie kleinen Unterschiede bei Betriebssystem oder den verwendenten Programmen nicht zu Störungen führen.
+Hier lernst Du den Umgang mit der CS50 Sandbox/Lab, die wir in Zukunft als Programmierumgebung, die für alle exakt gleich ist, nutzen wollen, damit die kleinen Unterschiede bei Betriebssystem oder den verwendenten Programmen nicht zu Störungen führen.
 
 {% next %}
 # Dateien erstellen und anzeigen
 
-In dieser Umgebung kannst Du Dateien erstellen, indem Du neben dem Ordnersymbol auf das Pluszeichen klickst. Durch eingeben eines Names, erstellst du eine Datei -- Linuxdateien benötigen nicht zwingend eine Dateiendung, oft gibt es diese aber als Konvention `.pdf` für PDF-Dateien, `.jpg` als Kennzeichen für Bilder im JPEG-Format oder `txt` für Textdateien.
+In dieser Umgebung kannst Du Dateien erstellen, indem Du neben dem Ordnersymbol auf das Pluszeichen klickst. Durch eingeben eines Names, erstellst du eine Datei -- Linuxdateien benötigen nicht zwingend eine Dateiendung, oft gibt es diese aber als Konvention `.pdf` für PDF-Dateien, `.jpg` als Kennzeichen für Bilder im JPEG-Format oder `.txt` für Textdateien.
 
 Danach wird die Datei direkt auch in einem Fenster geöffnet angezeigt. Klickt man das Ordnersymbol an, so ist es möglich den Verzeichnisbaum anzuzeigen.
 
 ## Aufgabe
-Erstelle eine
- Textdatei `test`.
+Erstelle eine Textdatei `test`.
 
 {% next %}
 # Verzeichnisse erstellen
 
-Um ein Verzeichnis anzulegen, ist es notwendig die Ansicht mit Verzeichnisbaum zu nutzen.
-
-
-{% next %}
-# Dateien ergänzen und anzeigen
-
-Den Inhalt einer Datei kann man im Fenster des Editors ansehen - für jede geöffnete Datei erhält man ein neues Tab. Gleichzeitig erlaubt diese Ansicht auch das Editieren der entsprechenden Datei.
+Um ein Verzeichnis anzulegen, ist es notwendig die Ansicht mit Verzeichnisbaum zu nutzen. Dafür klickt man auf das Ordner-Symbol am oberen Rand. Danach sieht man den Verzeichnisbaum mit allen Ordnern und Dateien. Ein neues Verzeichnis (oder auch eine neue Datei) kann man über das Symbol mit den drei Punkten erstellen.
 
 ## Aufgabe
-
-Ergänze in jeder Textdatei eine Zeile mit einer Überschrift (z.B. `1. Kapitel`).
+Lege einen Ordner `Buch`an.
 
 {% next %}
 # Die Konsole
@@ -58,6 +50,8 @@ Erstelle den Ordner `Rezepte` mit Hilfe der Konsole.
 ![Befehle für mkdir](sandbox2.gif)
 {% endspoiler %}
 
+
+
 {% next %}
 # `cd` -- Zwischen Verzeichnisse wechseln
 
@@ -76,3 +70,12 @@ Erstelle jetzt in der Konsole eine Textdatei mit geeignete Namen für ein Rezept
 `touch Lasagne.txt`
 ![Befehle für touch](sandbox4.gif)
 {% endspoiler %}
+
+{% next %}
+# Dateien ergänzen und anzeigen
+
+Den Inhalt einer Datei kann man im Fenster des Editors ansehen - für jede geöffnete Datei erhält man ein neues Tab. Gleichzeitig erlaubt diese Ansicht auch das Editieren der entsprechenden Datei.
+
+## Aufgabe
+
+Ergänze in jeder Textdatei eine Zeile mit einer Überschrift (z.B. `1. Kapitel`).
