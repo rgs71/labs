@@ -19,6 +19,10 @@ Erstelle einen Ordner `Buch`, der die drei Textdateien `Kapitel1.txt`, `Kapitel2
 
 Den Inhalt einer Datei kann man im Fenster des Editors ansehen - für jede geöffnete Datei erhält man ein neues Tab. Gleichzeitig erlaubt diese Ansicht auch das Editieren der entsprechenden Datei.
 
+## Aufgabe
+
+Ergänze in jeder Textdatei eine Zeile mit einer Überschrift (z.B. `1. Kapitel`).
+
 {% next %}
 # Die Konsole
 
@@ -29,10 +33,15 @@ Die verschiedenen Betriebssysteme haben oft leicht unterschiedliche Implementati
 {% next %}
 # `mkdir` -- Verzeichnisse in der Konsole erstellen
 
-Mit dem Befehl `mkdir` (für **m**a**k**e **dir**ectroy) kann man Verzeichnisse erstellen. Dabei erzeugt `mkdir test` einen Ordner mit Namen Test.
+Mit dem Befehl `mkdir` (für **m**a**k**e **dir**ectory) kann man Verzeichnisse erstellen. Dabei erzeugt `mkdir test` einen Ordner mit Namen Test.
 
 ## Aufgabe
 Erstelle den Ordner `Rezepte` mit Hilfe der Konsole.
+
+{% spoiler "Lösung" %}
+`mkdir Rezepte`
+![Befehle für mkdir](sandbox2.gif)
+{% endspoiler %}
 
 
 {% next %}
@@ -42,8 +51,9 @@ Mit dem Befehl `touch test` kannst Du eine Datei erstellen. Unter Linux ist es n
 
 ## Aufgabe
 
-Erstelle jetzt die Datei `buch.txt`. Wobei die Dateiendung für eine sogenannte Text-Datei steht.
+Erstelle jetzt in der Konsole eine Textdatei mit geeignete Namen für ein Rezept Deiner Wahl (z.B. `Lasagne.txt`).
 
 {% spoiler "Lösung" %}
-`touch buch.txt`
+`touch Lasagne.txt`
+![Befehle für touch](sandbox3.gif)
 {% endspoiler %}
