@@ -17,7 +17,7 @@ Erstelle einen Ordner `Buch`, der die drei Textdateien `Kapitel1.txt`, `Kapitel2
 {% next %}
 # Dateien ergänzen und anzeigen
 
-
+Den Inhalt einer Datei kann man im Fenster des Editors ansehen - für jede geöffnete Datei erhält man ein neues Tab. Gleichzeitig erlaubt diese Ansicht auch das Editieren der entsprechenden Datei.
 
 {% next %}
 # Die Konsole
@@ -26,9 +26,10 @@ Viele Systeme lassen sich nur per Konsole steuern, da auf diese Weise leichter d
 
 Die verschiedenen Betriebssysteme haben oft leicht unterschiedliche Implementationen ihrer Konsolenanwendung. Hier auf diesem virtualisierten Ubuntu-System lernst Du einiges über die Linux-Konsole. Wenn man z.b. [Cmder](https//:www.cmder.net) verwendet, ist es auch unter Windows möglich die gleichen Befehle zu nutzen - zustätzlich versteht Cmder aber auch Windows eigene Konsolenbefehle.
 
-{% next "`touch` -- Dateien in der Console erstellen" %}
+{% next %}
+# `touch` -- Dateien in der Console erstellen
 
-Mit dem Befehl `touch test`kannst Du eine Datei erstellen. Unter Linux ist es nicht notwendig, Dateien eine Dateiendung zu geben. 
+Mit dem Befehl `touch test` kannst Du eine Datei erstellen. Unter Linux ist es nicht notwendig, Dateien eine Dateiendung zu geben. 
 
 ## Aufgabe
 
