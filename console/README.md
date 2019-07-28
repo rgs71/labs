@@ -1,3 +1,9 @@
+# Dateien erstellen und anzeigen
+
+In dieser Umgebung kannst Du Dateien erstellen, indem Du neben dem Ordnersymbol auf das Pluszeichen klickst. Danach wird die Datei direkt auch in einem Fenster geöffnet angezeigt. Klickt man das Ordnersymbol an, so ist es möglich den Verzeichnisbaum anzuzeigen. Auch dort kann man Dateien oder Verzeichnisse anlegen, in dem man die oberste Makierung dafür verwendet.
+
+![Erstellen von Dateien und Ordnern mit GUI](sandbox1.gif)
+
 # Die Konsole
 
 Viele Systeme lassen sich nur per Konsole steuern, da auf diese Weise leichter durch Fernzugriff auf z.B. Internetservern o.ä. gearbeitet werden kann. Grundlegende Kenntnisse von Konsoleneanwendungen sind daher oft hilfreich. 
