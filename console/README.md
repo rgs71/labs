@@ -27,7 +27,16 @@ Viele Systeme lassen sich nur per Konsole steuern, da auf diese Weise leichter d
 Die verschiedenen Betriebssysteme haben oft leicht unterschiedliche Implementationen ihrer Konsolenanwendung. Hier auf diesem virtualisierten Ubuntu-System lernst Du einiges über die Linux-Konsole. Wenn man z.b. [Cmder](https//:www.cmder.net) verwendet, ist es auch unter Windows möglich die gleichen Befehle zu nutzen - zustätzlich versteht Cmder aber auch Windows eigene Konsolenbefehle.
 
 {% next %}
-# `touch` -- Dateien in der Console erstellen
+# `mkdir` -- Verzeichnisse in der Konsole erstellen
+
+Mit dem Befehl `mkdir` (für **m**a**k**e **dir**ectroy) kann man Verzeichnisse erstellen. Dabei erzeugt `mkdir test` einen Ordner mit Namen Test.
+
+## Aufgabe
+Erstelle den Ordner `Rezepte` mit Hilfe der Konsole.
+
+
+{% next %}
+# `touch` -- Dateien in der Konsole erstellen
 
 Mit dem Befehl `touch test` kannst Du eine Datei erstellen. Unter Linux ist es nicht notwendig, Dateien eine Dateiendung zu geben. 
 
