@@ -5,20 +5,21 @@ Hier lernst Du den Umgang mit der CS50 Sandbox/Lab, die wir in Zukunft als Progr
 {% next %}
 # Dateien erstellen und anzeigen
 
-In dieser Umgebung kannst Du Dateien erstellen, indem Du neben dem Ordnersymbol auf das Pluszeichen klickst. Durch eingeben eines Names, erstellst du eine Datei -- Linuxdateien benötigen nicht zwingend eine Dateiendung, oft gibt es diese aber als Konvention `.pdf` für PDF-Dateien, `.jpg` als Kennzeichen für Bilder im JPEG-Format oder `.txt` für Textdateien.
+In dieser Umgebung kannst Du Dateien erstellen, indem Du neben dem Ordnersymbol auf das Pluszeichen klickst. Durch eingeben eines Names, erstellst du eine Datei -- Linuxdateien benötigen nicht zwingend eine Dateiendung. Oft gibt es diese aber als Konvention, z.B.  `.pdf` für PDF-Dateien, `.jpg` als Kennzeichen für Bilder im JPEG-Format oder `.txt` für Textdateien.
 
 Danach wird die Datei direkt auch in einem Fenster geöffnet angezeigt. Klickt man das Ordnersymbol an, so ist es möglich den Verzeichnisbaum anzuzeigen.
 
 ## Aufgabe
-Erstelle eine Textdatei `test`.
+Erstelle eine Datei `Buch`.
 
 {% next %}
 # Verzeichnisse erstellen
 
-Um ein Verzeichnis anzulegen, ist es notwendig die Ansicht mit Verzeichnisbaum zu nutzen. Dafür klickt man auf das Ordner-Symbol am oberen Rand. Danach sieht man den Verzeichnisbaum mit allen Ordnern und Dateien. Ein neues Verzeichnis (oder auch eine neue Datei) kann man über das Symbol mit den drei Punkten erstellen.
+Um ein Verzeichnis anzulegen, ist es notwendig die Ansicht mit Verzeichnisbaum zu nutzen. Dafür klickt man auf das Ordner-Symbol am oberen Rand. Danach sieht man den Verzeichnisbaum mit allen Ordnern und Dateien. Ein neues Verzeichnis (oder auch eine neue Datei) kann man über das oberste Symbol mit den drei Punkten erstellen.
 
 ## Aufgabe
-Lege einen Ordner `Buch`an.
++ Lege einen Ordner `Buch`an.
++ Woran erkennt man, was die Datei `Buch` und welches der Ordner `Buch`ist?
 
 {% next %}
 # Die Konsole
@@ -30,11 +31,10 @@ Die verschiedenen Betriebssysteme haben oft leicht unterschiedliche Implementati
 {% next %}
 # `ls` -- Inhalt von Verzeichnissen anzeigen
 
-Mit dem Befehl `ls` (**l**i**s**t) kann man sich die Dateien in einem Verzeichnis anzeigen lassen. Würden wir jetzt in der Konsole `ls` aufrufen, würden wir den Ordner `Buch`angezeigt bekommen.
+Mit dem Befehl `ls` (**l**i**s**t) kann man sich die Dateien in einem Verzeichnis anzeigen lassen. Würden wir jetzt in der Konsole `ls` aufrufen, würden wir die Datei `Buch` und den Ordner `Buch` angezeigt bekommen.
 
 ## Aufgabe
-
-Lasse Dir auch eine L
+Worin unterscheiden sich Ordner und Dateien in der Konsole?
 
 
 {% next %}
