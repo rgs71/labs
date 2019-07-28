@@ -1,5 +1,4 @@
 lab50:
   files:
     - !exclude "*"
-    - !include pseudocode.txt
-    - !include main.py
+    - !include book.txt
