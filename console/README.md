@@ -5,14 +5,19 @@ Hier lernst Du den Umgang mit der CS50 Sandbox, die wir in Zukunft als Programmi
 {% next %}
 # Dateien erstellen und anzeigen
 
-In dieser Umgebung kannst Du Dateien erstellen, indem Du neben dem Ordnersymbol auf das Pluszeichen klickst. Danach wird die Datei direkt auch in einem Fenster geöffnet angezeigt. Klickt man das Ordnersymbol an, so ist es möglich den Verzeichnisbaum anzuzeigen. Auch dort kann man Dateien oder Verzeichnisse anlegen, in dem man die oberste Makierung dafür verwendet.
+In dieser Umgebung kannst Du Dateien erstellen, indem Du neben dem Ordnersymbol auf das Pluszeichen klickst. Durch eingeben eines Names, erstellst du eine Datei -- Linuxdateien benötigen nicht zwingend eine Dateiendung, oft gibt es diese aber als Konvention `.pdf` für PDF-Dateien, `.jpg` als Kennzeichen für Bilder im JPEG-Format oder `txt` für Textdateien.
 
-![Erstellen von Dateien und Ordnern mit GUI](sandbox1.gif)
+Danach wird die Datei direkt auch in einem Fenster geöffnet angezeigt. Klickt man das Ordnersymbol an, so ist es möglich den Verzeichnisbaum anzuzeigen.
+
+## Aufgabe
+Erstelle eine
+ Textdatei `test`.
 
 {% next %}
-### Aufgabe
+# Verzeichnisse erstellen
 
-Erstelle einen Ordner `Buch`, der die drei Textdateien `Kapitel1.txt`, `Kapitel2.txt` und `Kapitel3.txt` enthält.
+Um ein Verzeichnis anzulegen, ist es notwendig die Ansicht mit Verzeichnisbaum zu nutzen.
+
 
 {% next %}
 # Dateien ergänzen und anzeigen
@@ -31,6 +36,16 @@ Viele Systeme lassen sich nur per Konsole steuern, da auf diese Weise leichter d
 Die verschiedenen Betriebssysteme haben oft leicht unterschiedliche Implementationen ihrer Konsolenanwendung. Hier auf diesem virtualisierten Ubuntu-System lernst Du einiges über die Linux-Konsole. Wenn man z.b. [Cmder](https//:www.cmder.net) verwendet, ist es auch unter Windows möglich die gleichen Befehle zu nutzen - zustätzlich versteht Cmder aber auch Windows eigene Konsolenbefehle.
 
 {% next %}
+# `ls` -- Inhalt von Verzeichnissen anzeigen
+
+Mit dem Befehl `ls` (**l**i**s**t) kann man sich die Dateien in einem Verzeichnis anzeigen lassen. Würden wir jetzt in der Konsole `ls` aufrufen, würden wir den Ordner `Buch`angezeigt bekommen.
+
+## Aufgabe
+
+Lasse Dir auch eine L
+
+
+{% next %}
 # `mkdir` -- Verzeichnisse in der Konsole erstellen
 
 Mit dem Befehl `mkdir` (für **m**a**k**e **dir**ectory) kann man Verzeichnisse erstellen. Dabei erzeugt `mkdir test` einen Ordner mit Namen Test.
@@ -43,6 +58,10 @@ Erstelle den Ordner `Rezepte` mit Hilfe der Konsole.
 ![Befehle für mkdir](sandbox2.gif)
 {% endspoiler %}
 
+{% next %}
+# `cd` -- Zwischen Verzeichnisse wechseln
+
+In der Konsole kann man in einen Unterordner wechseln, indem man den Befehl `cd`(**c**hange **d**irectory) verwendet.  Um also in den Unterordner `Buch`zu wechseln, würde man `cd Buch` eingeben. Die Linuxkonsole unterscheidet Groß- und Kleinschreibung, d.h. `cd buch` würde gegebenenfalls eine Fehlermeldung produzieren. In der Konsole gibt es auch eine Abkürzung für den aktuellen Ordner `.` und für den übergeorneten Ordner `..` - mit diesem kann man dann auch entsprechend aus einem Ordner herauswechseln, indem man `cd ..` (wechsele in den übergeordneten Ordner) benutzt.    
 
 {% next %}
 # `touch` -- Dateien in der Konsole erstellen
@@ -55,5 +74,5 @@ Erstelle jetzt in der Konsole eine Textdatei mit geeignete Namen für ein Rezept
 
 {% spoiler "Lösung" %}
 `touch Lasagne.txt`
-![Befehle für touch](sandbox3.gif)
+![Befehle für touch](sandbox4.gif)
 {% endspoiler %}
