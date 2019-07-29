@@ -6,7 +6,9 @@ Das System bietet gleichzeitig eine graphsichen Umgebung (*GUI* graphical user i
 
 Viele Systeme lassen sich nur per Konsole steuern, da auf diese Weise leichter durch Fernzugriff auf z.B. Internetservern o.ä. gearbeitet werden kann. Grundlegende Kenntnisse von Konsoleneanwendungen sind daher oft hilfreich. 
 
-Die verschiedenen Betriebssysteme haben oft leicht unterschiedliche Implementationen ihrer Konsolenanwendung. Hier auf diesem virtualisierten Ubuntu-System lernst Du einiges über die Linux-Konsole. Wenn man z.b. [Cmder](https//:www.cmder.net) verwendet, ist es auch unter Windows möglich die gleichen Befehle zu nutzen - zustätzlich versteht Cmder aber auch Windows eigene Konsolenbefehle.
+Die verschiedenen Betriebssysteme haben oft leicht unterschiedliche Implementationen ihrer Konsolenanwendung. Hier auf diesem virtualisierten Ubuntu-System lernst Du einiges über die Linux-Konsole. Wenn man z.b. [Cmder](https//:www.cmder.net) verwendet, ist es auch unter Windows möglich die gleichen Befehle zu nutzen - zustätzlich versteht Cmder aber auch Windows eigene Konsolenbefehle. 
+
+> **Beachte** Die Linuxkonsole unterscheidet Groß- und Kleinschreibung!
 
 {% next %}
 # Dateien erstellen mit dem GUI
@@ -50,50 +52,38 @@ Erstelle das Verzeichnis `Buch` im Terminal.
 {% next %}
 # Verzeichnissen anzeigen mit dem CLI
 
-Mit dem Befehl `ls` (**l**i**s**t) kann man sich die Dateien und Unterverzeichnisse in einem Verzeichnis anzeigen lassen. Würden wir jetzt in der Konsole `ls` aufrufen, würden wir die Dateien `Vorwort.txt` und `Copyright.txt`sowie den Ordner `Buch` angezeigt bekommen.
+Mit dem Befehl `ls` (**l**i**s**t) kann man sich die Dateien und Unterverzeichnisse in einem Verzeichnis anzeigen lassen. Würden wir jetzt im Terminal `ls` aufrufen, würden wir die Dateien `Vorwort.txt` und `Copyright.txt`sowie die Ordner `Bilder` und `Buch` angezeigt bekommen.
 
 ## Aufgabe
 Worin unterscheiden sich Ordner und Dateien in der Konsole?
 
 {% next %}
-# `mkdir` -- Verzeichnisse in der Konsole erstellen
+# Verzeichnisse wechseln mit dem GUI
 
-
-
-## Aufgabe
-Erstelle den Ordner `Rezepte` mit Hilfe der Konsole.
-
-{% spoiler "Lösung" %}
-`mkdir Rezepte`
-![Befehle für mkdir](sandbox2.gif)
-{% endspoiler %}
-
-
-
-{% next %}
-# `cd` -- Zwischen Verzeichnisse wechseln
-
-In der Konsole kann man in einen Unterordner wechseln, indem man den Befehl `cd`(**c**hange **d**irectory) verwendet.  Um also in den Unterordner `Buch`zu wechseln, würde man `cd Buch` eingeben. Die Linuxkonsole unterscheidet Groß- und Kleinschreibung, d.h. `cd buch` würde gegebenenfalls eine Fehlermeldung produzieren. In der Konsole gibt es auch eine Abkürzung für den aktuellen Ordner `.` und für den übergeorneten Ordner `..` - mit diesem kann man dann auch entsprechend aus einem Ordner herauswechseln, indem man `cd ..` (wechsele in den übergeordneten Ordner) benutzt.    
-
-{% next %}
-# `touch` -- Dateien in der Konsole erstellen
-
-Mit dem Befehl `touch test` kannst Du eine Datei erstellen. Unter Linux ist es nicht notwendig, Dateien eine Dateiendung zu geben. 
+Um den aktuellen Ordner zu wechseln kann man in der GUI mit der Maus einen entsprechdnen Ordner auswählen. Wählt man das Verzeichnis `Buch`, so kann man über das Drei-Punkte-Menü am Verzeichnis Dateien und Unterverzeichnisse erstellen.
 
 ## Aufgabe
-
-Erstelle jetzt in der Konsole eine Textdatei mit geeignete Namen für ein Rezept Deiner Wahl (z.B. `Lasagne.txt`).
-
-{% spoiler "Lösung" %}
-`touch Lasagne.txt`
-![Befehle für touch](sandbox4.gif)
-{% endspoiler %}
+Erzeuge das Unterverzeichnis `Titelei`(Teile eines Buchs wie Vorwort, Inhaltsverzeichnis, etc.) im Verzeichnis `Buch`.
 
 {% next %}
-# Dateien ergänzen und anzeigen
+# Verzeichnisse wechseln mit dem CLI
 
-Den Inhalt einer Datei kann man im Fenster des Editors ansehen - für jede geöffnete Datei erhält man ein neues Tab. Gleichzeitig erlaubt diese Ansicht auch das Editieren der entsprechenden Datei.
+Im Terminal kann man in einen Unterordner wechseln, indem man den Befehl `cd`(**c**hange **d**irectory) verwendet.  Um also in den Unterordner `Buch`zu wechseln, würde man `cd Buch` verwenden.
+Das Terminal kennt auch Abkürzungen für den aktuellen Ordner `.` und für den übergeorneten Ordner `..` - mit diesem kann man dann auch entsprechend aus einem Ordner herauswechseln, indem man `cd ..` (wechsele in den übergeordneten Ordner) benutzt.    
 
 ## Aufgabe
++ Wechsele in das Verzeichnis `Buch` und erzeuge das Unterverzeichnis `Anhang`.
++ Benutze `ls` einmal im Verzeichnis `Buch` und einmal im übergeordnetem Verzeichnis. Was fällt Dir auf?
 
-Ergänze in jeder Textdatei eine Zeile mit einer Überschrift (z.B. `1. Kapitel`).
+{% next %}
+# Dateien kopieren mit dem GUI
+
+Aus Dateiexplorer kennst Du normalerweise die Möglichkeit Dateien und Ordner per +drag and drop* zu verschieben. Dies ist hier leider nicht möglich, da der Browser vermutet man würde die grafischen Elemente greifen wollen.
+
+{% next %}
+# Dateien kopieren mit dem CLI
+
+Im Terminal gibt uns die Befehl `cp`(**c**o**p**y) und `mv` (**m**o**v**e) die Möglichkeit Dateien zu kopieren oder zu verschieben. Dabei muss man allerdings den Pfad im Verzeichnisbaum mit angeben. Dabei kann man entweder relativ zum aktuellen Ordner oder relativ zum sogenannten `root`- Verzeichnis die Pfade angeben. Angenommen wir befinden uns im Terminal im Verzeichnis Buch. Dann würde der Befehl `cp ../Vorwort.txt Titelei/Vorwort.txt` die Datei `Vorwort.txt` aus dem übergeordentem Ordner in das Verzeichnis Titelei kopieren. Alternativ kann man auch vollständige Pfadangaben benutzen (diese werden angezeigt, wenn man im GUI mit der Maus auf der Datei ist) durch ``mv /root/sandbox/Copyright.txt /root/sandbox/Buch/Anhang/Copyright.txt` entsprechend die Textdatei `Copyrigt.txt` in das Unterverzeichnis `Anhang` verschieben.
+
+## Aufgabe
++ Führe die beiden Befehle durch, während in dem GUI alle Ornder *geöffnet* sind, so dass Du Unterordner und Dateien innerhlab der Ordner sehen kannst.
