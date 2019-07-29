@@ -78,12 +78,12 @@ Das Terminal kennt auch Abkürzungen für den aktuellen Ordner `.` und für den 
 {% next %}
 # Dateien kopieren mit dem GUI
 
-Aus Dateiexplorer kennst Du normalerweise die Möglichkeit Dateien und Ordner per +drag and drop* zu verschieben. Dies ist hier leider nicht möglich, da der Browser vermutet man würde die grafischen Elemente greifen wollen.
+Aus Dateiexplorer kennst Du normalerweise die Möglichkeit Dateien und Ordner per *drag and drop* zu verschieben. Dies ist hier leider nicht möglich, da der Browser vermutet man würde die grafischen Elemente greifen wollen.
 
 {% next %}
 # Dateien kopieren mit dem CLI
 
-Im Terminal gibt uns die Befehl `cp`(**c**o**p**y) und `mv` (**m**o**v**e) die Möglichkeit Dateien zu kopieren oder zu verschieben. Dabei muss man allerdings den Pfad im Verzeichnisbaum mit angeben. Dabei kann man entweder relativ zum aktuellen Ordner oder relativ zum sogenannten `root`- Verzeichnis die Pfade angeben. Angenommen wir befinden uns im Terminal im Verzeichnis Buch. Dann würde der Befehl `cp ../Vorwort.txt Titelei/Vorwort.txt` die Datei `Vorwort.txt` aus dem übergeordentem Ordner in das Verzeichnis Titelei kopieren. Alternativ kann man auch vollständige Pfadangaben benutzen (diese werden angezeigt, wenn man im GUI mit der Maus auf der Datei ist) durch ``mv /root/sandbox/Copyright.txt /root/sandbox/Buch/Anhang/Copyright.txt` entsprechend die Textdatei `Copyrigt.txt` in das Unterverzeichnis `Anhang` verschieben.
+Im Terminal gibt uns die Befehl `cp`(**c**o**p**y) und `mv` (**m**o**v**e) die Möglichkeit Dateien zu kopieren oder zu verschieben. Dabei muss man allerdings den Pfad im Verzeichnisbaum mit angeben. Dabei kann man entweder relativ zum aktuellen Ordner oder relativ zum sogenannten `root`- Verzeichnis die Pfade angeben. Angenommen wir befinden uns im Terminal im Verzeichnis Buch. Dann würde der Befehl `cp ../Vorwort.txt Titelei/Vorwort.txt` die Datei `Vorwort.txt` aus dem übergeordentem Ordner in das Verzeichnis Titelei kopieren. Alternativ kann man auch vollständige Pfadangaben benutzen (diese werden angezeigt, wenn man im GUI mit der Maus auf der Datei ist) durch `mv /root/sandbox/Copyright.txt /root/sandbox/Buch/Anhang/Copyright.txt` entsprechend die Textdatei `Copyrigt.txt` in das Unterverzeichnis `Anhang` verschieben.
 
 ## Aufgabe
 + Führe die beiden Befehle durch, während in dem GUI alle Ornder *geöffnet* sind, so dass Du Unterordner und Dateien innerhlab der Ordner sehen kannst.
