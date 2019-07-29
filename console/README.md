@@ -71,6 +71,8 @@ Erzeuge das Unterverzeichnis `Titelei`(Teile eines Buchs wie Vorwort, Inhaltsver
 Im Terminal kann man in einen Unterordner wechseln, indem man den Befehl `cd`(**c**hange **d**irectory) verwendet.  Um also in den Unterordner `Buch`zu wechseln, würde man `cd Buch` verwenden.
 Das Terminal kennt auch Abkürzungen für den aktuellen Ordner `.` und für den übergeorneten Ordner `..` - mit diesem kann man dann auch entsprechend aus einem Ordner herauswechseln, indem man `cd ..` (wechsele in den übergeordneten Ordner) benutzt.    
 
+Da man leicht den Überblick verlieren kann gibt der Befehl `pwd` (**p**rint **w**orking **d**irectory) den vollständigen Pfad zum aktuellen Verzeichnis aus.
+
 ## Aufgabe
 + Wechsele in das Verzeichnis `Buch` und erzeuge das Unterverzeichnis `Anhang`.
 + Benutze `ls` einmal im Verzeichnis `Buch` und einmal im übergeordnetem Verzeichnis. Was fällt Dir auf?
@@ -86,4 +88,25 @@ Aus Dateiexplorer kennst Du normalerweise die Möglichkeit Dateien und Ordner pe
 Im Terminal gibt uns die Befehl `cp`(**c**o**p**y) und `mv` (**m**o**v**e) die Möglichkeit Dateien zu kopieren oder zu verschieben. Dabei muss man allerdings den Pfad im Verzeichnisbaum mit angeben. Dabei kann man entweder relativ zum aktuellen Ordner oder relativ zum sogenannten `root`- Verzeichnis die Pfade angeben. Angenommen wir befinden uns im Terminal im Verzeichnis Buch. Dann würde der Befehl `cp ../Vorwort.txt Titelei/Vorwort.txt` die Datei `Vorwort.txt` aus dem übergeordentem Ordner in das Verzeichnis Titelei kopieren. Alternativ kann man auch vollständige Pfadangaben benutzen (diese werden angezeigt, wenn man im GUI mit der Maus auf der Datei ist) durch `mv /root/sandbox/Copyright.txt /root/sandbox/Buch/Anhang/Copyright.txt` entsprechend die Textdatei `Copyrigt.txt` in das Unterverzeichnis `Anhang` verschieben.
 
 ## Aufgabe
-+ Führe die beiden Befehle durch, während in dem GUI alle Ornder *geöffnet* sind, so dass Du Unterordner und Dateien innerhlab der Ordner sehen kannst.
+Führe die beiden Befehle durch, während in dem GUI alle Ordner *geöffnet* sind, so dass Du Unterordner und Dateien innerhalb der Ordner sehen kannst.
+
+{% next %}
+# Dateien und Verzeichnisse löschen mit dem GUI
+
+Das Drei-Punkte-Menü neben jeder Datei und jedem Ordner erlaubt es diese zu löschen. Wenn man ein Verzeichnis löscht, wird auch sofort der gesamte Inhalt - also alle Dateien und Unterverzeichnisse -  mitgelöscht.
+
+## Aufgabe 
+Lösche den Ordner `Bilder` mit dem GUI.
+
+{% next %}
+# Dateien löschen mit dem CLI
+ 
+ Mit dem Kommando `rm` (**r**e**m**ove) kann man eine Datei entfernen. Dabei muss wieder der Pfad angegeben werden. Wenn wir uns im Ordner `Buch` befinden, würde das Kommando `rm ../Vorwort.txt` die Datei `Vorwort.txt`aus dem übergeordentem Verzeichnis löschen. Alternativ könnte man wieder den vollständigen Pfad angeben `rm /root/sandbox/Vorwort.txt`.
+
+ ## Aufgabe
+ Lösche jetzt mit dem obigen Befehl die entsprechende Datei.
+
+ {% next %}
+ # Ordner löschen mit dem CLI
+
+ Das Kommando `rmdir` (**r**e**m**ove **dir**ectory) erlaubt es leere Ordner zu löschen. Will man ein ähnliches Verhalten wie in der GUI haben, nutzt man `rm -d -R` (wobei `-d` anzeigt, dass ein Verzeichnis gelöscht werden soll und `-R` anzeigt, dass rekursiv auch alles innerhalb gelöscht werden soll). Allerdings wird man dann auch beim löschen jeder Datei einzeln gefragt und muss den Löschvorgang mit `y`bzw. `yes` bestätigen oder mit `n` bzw. `no` abbrechen.
