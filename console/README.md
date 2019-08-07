@@ -108,12 +108,15 @@ Lösche den Ordner `Bilder` mit dem GUI.
  Mit dem Kommando `rm` (**r**e**m**ove) kann man eine Datei entfernen. Dabei muss wieder der Pfad angegeben werden. Wenn wir uns im Ordner `Buch` befinden, würde das Kommando `rm ../Vorwort.txt` die Datei `Vorwort.txt`aus dem übergeordentem Verzeichnis löschen. Alternativ könnte man wieder den vollständigen Pfad angeben `rm /root/sandbox/Vorwort.txt`.
 
 ## Aufgabe
-+ Lösche jetzt mit dem obigen Befehl die entsprechende Datei.
+Lösche jetzt mit dem obigen Befehl die entsprechende Datei.
 
 {% next %}
 # Ordner löschen mit dem CLI
 
  Das Kommando `rmdir` (**r**e**m**ove **dir**ectory) erlaubt es leere Ordner zu löschen. Will man ein ähnliches Verhalten wie in der GUI haben, nutzt man `rm -d -R` (wobei `-d` anzeigt, dass ein Verzeichnis gelöscht werden soll und `-R` anzeigt, dass rekursiv auch alles innerhalb gelöscht werden soll). Allerdings wird man dann auch beim löschen jeder Datei einzeln gefragt und muss den Löschvorgang mit `y` bzw. `yes` bestätigen oder mit `n` bzw. `no` abbrechen.
+
+
+> Der nächste Abschnitt ist für den Umgang mit dem Terminal sehr nützlich, aber auch entsprechend komplexer!
 
 {% next %}
 # Inhalt von Dateien im GUI anzeigen und manipulieren
@@ -138,6 +141,8 @@ vorhandene Datei anzeigen lassen will?
 {% next %}
 # Andere Befehle im CLI
 
+Der Befehl `date` gibt Datum und Uhrzeit des Rechners aus.
+
 Mit dem Befehl `echo` kann man Nachrichten im Terminal anzeigen lassen. Dies ist später hilfreich, wenn man komplexere Vorgänge hat und an bestimmten stellen Ausgaben für den Benutze anzeigen will.
 
 Der Befehl `echo "Test des Befehls echo!" würde entsprechend die Nachricht in den Anführungszeichen ausgeben.
@@ -148,20 +153,51 @@ Der Befehl `wc README.txt` würde entsprechende Informationen über `README.txt`
 
 
 
+
+
 ## Aufgabe
++ Überprüfe, ob `date` die gewünschte Information bereitstellt.
 + Benutze `echo` um eine Nachricht wie "Starting download ..." im Terminal anzeigen zu lassen.
 + Erstelle eine Textdatei `README.txt`. Ergänze in einigen Zeilen kurze Sätze wie *Der Hund rennt im Garten*.
 + Benutze `wc README.txt` und interpretiere die Ausgabe. Ändere `README.txt` um diese Vermutungen zu bestätigen.
 
 
 {% next %}
-# Inhalt von Dateien im CLI ändern
+# Dateien im CLI mit `>` verändern
 
-In einigen Fällen möchte man bestimmte Informationen aus Dateien oder von Befehlen speichern können. Dafür wurde im Terminal das `>` bzw. `<` Symbol verwendet um diese Umleitung zu zeigen. Der Befehl `command > file` würde den Befehl `command` ausführen und die Ausgabe in der Datei `file` speichern.
-Alternativ kann man auch `command < file` benutzen, um dem Befehl `command` mit den Parametern aus `file` zu verwenden.
+um ggf. später aus diesen Einträgen Fehler zu erkennen. Man nennt so etwas eine Logdatei.
 
-Der Befehl `echo < README.txt` würde dann entsprechend den
-So scheint dies noch nicht sinnvoll, aber in Kombination mit anderen Befehlen ist dies später ein wichtiges Werkzeug im Terminal.
+Möchte man z.B. speichern, zu welcher  Uhrzeit etwas passiert ist könnte `date > Zugriff.log` die Ausgabe von `ls` in `Zugriff.log` speichern. 
 
 ## Aufgabe
-+ 
++ Führe den Befehl `date > Zugriff.log` aus. Öffne dann im Editor diese Logdatei.
++ Führe jetzt noch einmal den gleichen Befehl aus. Was fällt auf?
++ Ersetze beim dritten ausführen `>` durch `>>`. Was ändert sich?
++ Benutze `echo "Inhalt:" >> Zugriff.log`. 
++ Führe jetzt `ls >> Zugriff.log` aus.
+
+{% next %}
+# Befehlen mit `<` Dateien zuführen
+
+Wir kennen bereits den Befehl `wc` der Zeilen, Worte und Buchstaben von Textdateien zählen kann.
+Die Option `-l` sorgt dafür, dass nur die Anzahl der Zeilen (lines) ausgegeben wird. Damit würde `wc -l Zugriff.log` die Anzahl der Zugriffe auf eine Datei anzeigen können, wenn jedes Mal per `date` bei Änderungen der Zugriff geloggt wird.
+
+Mit `wc -l < Zugriff.log` sendet man den Inhalt von `Zugriff.log` an `wc`. 
+
+## Aufgabe
+Lege eine entsprechende Datei `Zugriff.log` an und führe den Befehl aus.
+
+{% next %}
+# Befehle mit einander Verketten (`|`)
+
+Will man die Ausgabe eines Befehls einem anderen Befehl als Eingabe mitgeben, könnte man dies über eine entsprechden Datei zwischenspeichern. Einfacher ist es die Befehle direkt zu verketten, dabei wir bei `command1 | command2` die Ausgabe von  `command1` als Eingabe für `command2` genommen.
+
+Möchte man in einem Verzeichnis die Dateien zählen, könnte man mittels `ls` eine Liste der Dateien erzeugen, durch `|` kann man diese direkt an `wc -l` übergeben, so dass nur die Anzahl der Zeilen, welche der Anzahl der Dateien entspricht ausgegeben wird.
+
+## Aufgabe
++ Führe den Befehl `ls | wc -l` in unterschiedlichen Ordnern aus.
++ Überlege Dir, wie Du mit `wc -m` (zählt die Zeichen inklusive Zeilenumbruch) benutzen kannst, um die Anzahl der Buchstaben, die der obere Befehl ausgibt in der Datei `result.txt`zu speichern.
+
+{% spoiler "Lösung" %}
+`ls | wc -l | wc -m > result.txt`
+{% endspoiler %}
