@@ -2,13 +2,13 @@
 
 Hier lernst Du den Umgang mit der CS50 Sandbox/Lab, die wir in Zukunft als Programmierumgebung, die für alle exakt gleich ist, nutzen wollen, damit die kleinen Unterschiede bei Betriebssystem oder den verwendenten Programmen nicht zu Störungen führen.
 
-Das System bietet gleichzeitig eine graphsichen Umgebung (*GUI* graphical user interface) sowie ein textbasierte Umgebung (*CLI* command-line interface) mit der man Dateien und Verzeichnisse erstellen und manipulieren kann. Statt des Begriffs CLI wird auch von Kommandozeile oder Terminal gesprochen.
+Das System bietet gleichzeitig eine graphischen Umgebung (*GUI* graphical user interface) sowie ein textbasierte Umgebung (*CLI* command-line interface) mit der man Dateien und Verzeichnisse erstellen und manipulieren kann. Statt des Begriffs CLI wird auch von Kommandozeile, Konsole oder Terminal gesprochen.
 
-Viele Systeme lassen sich nur per Konsole steuern, da auf diese Weise leichter durch Fernzugriff auf z.B. Internetservern o.ä. gearbeitet werden kann. Grundlegende Kenntnisse von Konsoleneanwendungen sind daher oft hilfreich. 
+Viele Systeme lassen sich nur per Terminal steuern, da auf diese Weise leichter durch Fernzugriff auf z.B. Internetservern o.ä. gearbeitet werden kann. Daher sind grundlegende Kenntnisse des Terminals hilfreich. 
 
-Die verschiedenen Betriebssysteme haben oft leicht unterschiedliche Implementationen ihrer Konsolenanwendung. Hier auf diesem virtualisierten Ubuntu-System lernst Du einiges über die Linux-Konsole. Wenn man z.b. [Cmder](https//:www.cmder.net) verwendet, ist es auch unter Windows möglich die gleichen Befehle zu nutzen - zustätzlich versteht Cmder aber auch Windows eigene Konsolenbefehle. 
+Die verschiedenen Betriebssysteme haben oft leicht unterschiedliche Implementationen ihres Terminals. Hier auf diesem virtualisierten Ubuntu-System lernst Du einiges über das Linux-Terminal. Wenn man z.b. [Cmder](https//:www.cmder.net) verwendet, ist es auch unter Windows möglich die gleichen Befehle zu nutzen - zustätzlich versteht Cmder aber auch windowseigene Befehle. 
 
-> **Beachte** Die Linuxkonsole unterscheidet Groß- und Kleinschreibung!
+> **Beachte** Das Terminal unter Linux unterscheidet Groß- und Kleinschreibung!
 
 {% next %}
 # Dateien erstellen mit dem GUI
@@ -54,8 +54,11 @@ Erstelle das Verzeichnis `Buch` im Terminal.
 
 Mit dem Befehl `ls` (**l**i**s**t) kann man sich die Dateien und Unterverzeichnisse in einem Verzeichnis anzeigen lassen. Würden wir jetzt im Terminal `ls` aufrufen, würden wir die Dateien `Vorwort.txt` und `Copyright.txt`sowie die Ordner `Bilder` und `Buch` angezeigt bekommen.
 
+Viele Betriebssysteme kennen verborgene Verzeichnisse und Dateien, die im Normalfall für Anwender uninteressant sind und daher ausgeblendet werden. Diese können im Terminal mit `ls -a` (**l**i**s**t **a**ll) angezeigt werden.
+
 ## Aufgabe
-Worin unterscheiden sich Ordner und Dateien in der Konsole?
++ Worin unterscheiden sich Ordner und Dateien im Terminal?
++ Überprüfe, ob es versteckte Verzeichnisse oder Dateien gibt? Falls ja, kannst Du vermuten was darin gespeichert wird?
 
 {% next %}
 # Verzeichnisse wechseln mit dem GUI
@@ -76,6 +79,7 @@ Da man leicht den Überblick verlieren kann gibt der Befehl `pwd` (**p**rint **w
 ## Aufgabe
 + Wechsele in das Verzeichnis `Buch` und erzeuge das Unterverzeichnis `Anhang`.
 + Benutze `ls` einmal im Verzeichnis `Buch` und einmal im übergeordnetem Verzeichnis. Was fällt Dir auf?
++ Überprüfe mit `pwd` jeweils das Verzeichnis in dem Du gerade den `ls` Befehl ausführst.
 
 {% next %}
 # Dateien kopieren mit dem GUI
@@ -104,9 +108,60 @@ Lösche den Ordner `Bilder` mit dem GUI.
  Mit dem Kommando `rm` (**r**e**m**ove) kann man eine Datei entfernen. Dabei muss wieder der Pfad angegeben werden. Wenn wir uns im Ordner `Buch` befinden, würde das Kommando `rm ../Vorwort.txt` die Datei `Vorwort.txt`aus dem übergeordentem Verzeichnis löschen. Alternativ könnte man wieder den vollständigen Pfad angeben `rm /root/sandbox/Vorwort.txt`.
 
  ## Aufgabe
- Lösche jetzt mit dem obigen Befehl die entsprechende Datei.
+ + Lösche jetzt mit dem obigen Befehl die entsprechende Datei.
 
  {% next %}
  # Ordner löschen mit dem CLI
 
- Das Kommando `rmdir` (**r**e**m**ove **dir**ectory) erlaubt es leere Ordner zu löschen. Will man ein ähnliches Verhalten wie in der GUI haben, nutzt man `rm -d -R` (wobei `-d` anzeigt, dass ein Verzeichnis gelöscht werden soll und `-R` anzeigt, dass rekursiv auch alles innerhalb gelöscht werden soll). Allerdings wird man dann auch beim löschen jeder Datei einzeln gefragt und muss den Löschvorgang mit `y`bzw. `yes` bestätigen oder mit `n` bzw. `no` abbrechen.
+ Das Kommando `rmdir` (**r**e**m**ove **dir**ectory) erlaubt es leere Ordner zu löschen. Will man ein ähnliches Verhalten wie in der GUI haben, nutzt man `rm -d -R` (wobei `-d` anzeigt, dass ein Verzeichnis gelöscht werden soll und `-R` anzeigt, dass rekursiv auch alles innerhalb gelöscht werden soll). Allerdings wird man dann auch beim löschen jeder Datei einzeln gefragt und muss den Löschvorgang mit `y` bzw. `yes` bestätigen oder mit `n` bzw. `no` abbrechen.
+
+ {% next %}
+ # Inhalt von Dateien im GUI anzeigen und manipulieren
+
+ Wir haben oben bereits gesehen, dass für die meisten Dateien sofort in der GUI ein Tab geöffnet wird. In diesem Fenster kann man einfach direkt schreiben und so z.B. eine Textdatei verändern. Gleichzeitig sieht man immer den Inhalt der entsprechdenden Datei.
+
+ ## Aufgabe
++ Erstelle im Ordner `Titelei` eine Textdatei `Inhaltsverzeichnis.txt`.
++ Ergänze in der ersten Zeile den Text `Einleitung`. Die Änderungen werden in der Sandbox automatisch gespeichert - später in der IDE muss man selbst Änderungen speichern.
+
+{% next %}
+# Inhalt von Dateien im CLI anzeigen
+
+Zum Anzeigen des Inhalts einer Datei kann man im Terminal den Befehl `cat` (con**cat**enate) benutzen. Mit `cat README.txt` würde also der Inhalt der Datei `README.txt` ausgegeben werden.
+
+## Aufgabe
++ Lasse Dir den Inhalt von `Inhaltsverzeichnis.txt` ausgeben.
++ Was passiert, falls man eine leere Datei wie `Vorwort.txt` anzeigen läßt?
++ Was passiert, wenn man eine nicht 
+vorhandene Datei anzeigen lassen will?
+
+{% next %}
+# Andere Befehle im CLI
+
+Mit dem Befehl `echo` kann man Nachrichten im Terminal anzeigen lassen. Dies ist später hilfreich, wenn man komplexere Vorgänge hat und an bestimmten stellen Ausgaben für den Benutze anzeigen will.
+
+Der Befehl `echo "Test des Befehls echo!" würde entsprechend die Nachricht in den Anführungszeichen ausgeben.
+
+Es gibt auch den Befehl `wc` (**w**ord **c**ount), der unter anderem die Anzahl von Worten zählen kann.
+
+Der Befehl `wc README.txt` würde entsprechende Informationen über `README.txt` anzeigen.
+
+
+
+## Aufgabe
++ Benutze `echo` um eine Nachricht wie "Starting download ..." im Terminal anzeigen zu lassen.
++ Erstelle eine Textdatei `README.txt`. Ergänze in einigen Zeilen kurze Sätze wie *Der Hund rennt im Garten*.
++ Benutze `wc README.txt` und interpretiere die Ausgabe. Ändere `README.txt` um diese Vermutungen zu bestätigen.
+
+
+{% next %}
+# Inhalt von Dateien im CLI ändern
+
+In einigen Fällen möchte man bestimmte Informationen aus Dateien oder von Befehlen speichern können. Dafür wurde im Terminal das `>` bzw. `<` Symbol verwendet um diese Umleitung zu zeigen. Der Befehl `command > file` würde den Befehl `command` ausführen und die Ausgabe in der Datei `file` speichern.
+Alternativ kann man auch `command < file` benutzen, um dem Befehl `command` mit den Parametern aus `file` zu verwenden.
+
+Der Befehl `echo < README.txt` würde dann entsprechend den
+So scheint dies noch nicht sinnvoll, aber in Kombination mit anderen Befehlen ist dies später ein wichtiges Werkzeug im Terminal.
+
+## Aufgabe
++ 
