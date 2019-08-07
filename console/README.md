@@ -107,20 +107,20 @@ Lösche den Ordner `Bilder` mit dem GUI.
  
  Mit dem Kommando `rm` (**r**e**m**ove) kann man eine Datei entfernen. Dabei muss wieder der Pfad angegeben werden. Wenn wir uns im Ordner `Buch` befinden, würde das Kommando `rm ../Vorwort.txt` die Datei `Vorwort.txt`aus dem übergeordentem Verzeichnis löschen. Alternativ könnte man wieder den vollständigen Pfad angeben `rm /root/sandbox/Vorwort.txt`.
 
- ## Aufgabe
- + Lösche jetzt mit dem obigen Befehl die entsprechende Datei.
+## Aufgabe
++ Lösche jetzt mit dem obigen Befehl die entsprechende Datei.
 
- {% next %}
- # Ordner löschen mit dem CLI
+{% next %}
+# Ordner löschen mit dem CLI
 
  Das Kommando `rmdir` (**r**e**m**ove **dir**ectory) erlaubt es leere Ordner zu löschen. Will man ein ähnliches Verhalten wie in der GUI haben, nutzt man `rm -d -R` (wobei `-d` anzeigt, dass ein Verzeichnis gelöscht werden soll und `-R` anzeigt, dass rekursiv auch alles innerhalb gelöscht werden soll). Allerdings wird man dann auch beim löschen jeder Datei einzeln gefragt und muss den Löschvorgang mit `y` bzw. `yes` bestätigen oder mit `n` bzw. `no` abbrechen.
 
- {% next %}
- # Inhalt von Dateien im GUI anzeigen und manipulieren
+{% next %}
+# Inhalt von Dateien im GUI anzeigen und manipulieren
 
  Wir haben oben bereits gesehen, dass für die meisten Dateien sofort in der GUI ein Tab geöffnet wird. In diesem Fenster kann man einfach direkt schreiben und so z.B. eine Textdatei verändern. Gleichzeitig sieht man immer den Inhalt der entsprechdenden Datei.
 
- ## Aufgabe
+## Aufgabe
 + Erstelle im Ordner `Titelei` eine Textdatei `Inhaltsverzeichnis.txt`.
 + Ergänze in der ersten Zeile den Text `Einleitung`. Die Änderungen werden in der Sandbox automatisch gespeichert - später in der IDE muss man selbst Änderungen speichern.
 
