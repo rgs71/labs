@@ -165,7 +165,8 @@ Der Befehl `wc README.txt` würde entsprechende Informationen über `README.txt`
 {% next %}
 # Dateien im CLI mit `>` verändern
 
-um ggf. später aus diesen Einträgen Fehler zu erkennen. Man nennt so etwas eine Logdatei.
+
+Manchmal möchte man Ausgaben von Befehlen speichern, um ggf. später aus diesen Einträgen Fehler zu erkennen. Man nennt so etwas eine Logdatei.
 
 Möchte man z.B. speichern, zu welcher  Uhrzeit etwas passiert ist könnte `date > Zugriff.log` die Ausgabe von `ls` in `Zugriff.log` speichern. 
 
