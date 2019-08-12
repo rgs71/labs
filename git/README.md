@@ -14,3 +14,30 @@ Wenn Du auf Deinem eigenem Rechner mit Git arbeiten willst, kannst Du Dir die en
 
 In Schulen kann es sein, dass die Windowskonsole (`cmd`) aus Sicherheitsgründen gesperrt ist, daher arbeiten wir zunächst im CS50 Lab/Sandbox mit dem Programm Git.
 
+{% next %}
+# Überprüfung der Installation
+
+Hier in CS50 Lab kann man im Terminal mit dem Befehl `git --version` die Version von Git anzeigen lassen.
+
+Mit dem entsprechdem Befehl sollte dies auch im Cmder funkionieren.
+
+{% next %}
+# Hilfe bei Git
+
+Es ist immer möglich durch `git --help` eine Ausgabe der Hilfe im Terminal zu erzeugen. Jetzt verstehst du vielleicht noch nicht was die Ausgabe bedeutet, aber sobald Du mit Git vertrauter bist, kannst Du Dich so an die entsprechenden Befehle erinnern.
+
+{% next %}
+# Initialisieren des Git-Repository
+
+Git speichert die Daten in einem sogenanntem Repository (kurz *repo*). Als Repository wird ein Verzeichnis genutzt, deren Unterverzeichnisse und Dateien durch Git gesichert werden sollen.
+
+In unserem Fall werden wir statt mit Quelltext aber zunächst mit reinen Textdateien arbeiten, damit nicht das Programmieren, sondern das Werkzeug Git im Vordergrund steht. Als Beispiel werden wir eine Sammlung von Rezepten anlegen. In den Übungsaufgaben wird entsprechend eine Facharbeit erstellt.
+
+Zunächst legen wir durch `mkdir Rezepte` einen Ordner an und wechseln mit `cd Rezepte` in den Ordner. Als zweites können wir durch `git init` diesen Ordner als Repository initialisieren.
+
+## Aufgabe
++ Lege einen Ordner `Facharbeit` an.
++ Führe `ls -a` aus.
++ Initialisiere jetzt das Git-Repository.
++ Führe noch einmal `ls -a` aus. Was fällt auf? Untersuche!
+
