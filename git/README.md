@@ -36,8 +36,40 @@ In unserem Fall werden wir statt mit Quelltext aber zunächst mit reinen Textdat
 Zunächst legen wir durch `mkdir Rezepte` einen Ordner an und wechseln mit `cd Rezepte` in den Ordner. Als zweites können wir durch `git init` diesen Ordner als Repository initialisieren.
 
 ## Aufgabe
-+ Lege einen Ordner `Facharbeit` an.
++ Lege einen Ordner `Facharbeit` an und wechsele in diesen.
 + Führe `ls -a` aus.
 + Initialisiere jetzt das Git-Repository.
 + Führe noch einmal `ls -a` aus. Was fällt auf? Untersuche!
+
+{% next %}
+# Hinzufügen von Dateien
+
+In unserem Rezept Repository werden wir jetzt die Textdatei `Pfannkuchen.txt` anlegen.
+
+Danach führen wir im Terminal (innerhalb des Verzeichnis `Rezepte`) den Befehl `git status` aus.
+
+Git erkennt die neue Datei und schlägt selbst vor, was man evtl. mit dieser Datei machen könnte.
+
+Entsprechden veranlassen wir Git durch `git add Pfannkuchen.txt` die entsprechende Datei zu beobachten und in den sogenannten *Index* aufzunehmen.
+
+Der Befehl `git status` zeigt dies entsprechend an.
+
+Damit das Git Repository diese Datei sichert und nicht nur beobachtet, führen wir `git commit -m "Lasagne.txt erstellt"` aus. Dabei wird durch `-m` angezeigt, dass wir die sogenannten Commit-Message mitgeben - durch diese kann man später leichter Änderungen im Repository nachvollziehen. Der Teil zwischen den Anführungszeichen ist die Nachricht.
+
+## Aufgabe
++ Erstelle in dem Verzeichnis `Facharbeit` die Datei `Literatur.txt`.
++ Füge die Datei  in den Index ein. Überprüfe  den Status des Repositories.
++ Führe einen sogenannten Commit aus - beachte, dass Du dafür Deinen Namen und Deine Email-Adresse entsprechend der Aufforderung für Git speichern musst.
++ Führe alle drei oberen Schritte auch noch mit einem neuerstellten Ordner `Bilder` durch.
+
+{% next %}
+# Die Commit-Historie anzeigen
+
+Wenn man nach einiger Zeit nachvollziehen will, wie sich ein Git Repository verändert hat, kann man mit `git log` eine Auflistung aller Commits anzeigen lassen.
+
+## Aufgabe
++ Betrachte die Commit-Historie für Dein Facharbeit-Repository.
++ Stelle eine Vermutung an, was die entsprechenden Ausgaben bedeuten.
+
+
 
