@@ -72,7 +72,7 @@ Damit das Git Repository diese Datei sichert und nicht nur beobachtet, führen w
 ## Aufgabe
 + Erstelle in dem Verzeichnis `Facharbeit` die Datei `Literatur.txt`.
 + Füge die Datei  in den Index ein. Überprüfe  den Status des Repositories.
-+ Führe einen sogenannten Commit aus - beachte, dass Du dafür Deinen Namen und Deine Email-Adresse entsprechend der Aufforderung für Git speichern musst.
++ Führe einen sogenannten Commit aus - beachte, dass Du dafür Deinen Namen und Deine Email-Adresse über `git config` festgelegt haben.
 + Führe alle drei oberen Schritte auch noch mit einem neuerstellten Ordner `Bilder` durch.
 
 {% next %}
@@ -91,6 +91,11 @@ Du hast sicherlich festgestellt, dass die Logdatei anzeigt, durch welchen User, 
 
 Die erste Zeile beginnt jeweils mit der sogenannten Commit-ID, welche ein SHA-1 Hash ist. Der Wert wird berechnet, aus den vorherigen Commits, dem Autor, seiner Email und den Änderungen an den Dateien. Durch diese ID wird jeder Commit eines Repos eindeutig identifiziert.
 
-Üblicherweise reicht es für viele Git Prozesse nur einen ausreichend langen Anfang der ID zu übermitteln.
+Üblicherweise reicht es für viele Git Prozesse aus, nur einen ausreichend langen Anfang der ID zu übermitteln.
+
+## Aufgabe
+
++ Recherchiere kurz, was eine [Hashfunktion](https://www.inf-schule.de/kommunikation/kryptologie/digitalesignatur/konzept_hashfunktion) ist. Die für Git verwendete Hashfunktion SHA-1 ist aber leider kryptographisch [unsicher](https://www.golem.de/news/hashfunktion-der-schwierige-abschied-von-sha-1-1703-127041.html). 
+
 
 
