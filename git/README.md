@@ -94,7 +94,45 @@ Die erste Zeile beginnt jeweils mit der sogenannten Commit-ID, welche ein SHA-1 
 
 ## Aufgabe
 
-+ Recherchiere kurz, was eine [Hashfunktion](https://www.inf-schule.de/kommunikation/kryptologie/digitalesignatur/konzept_hashfunktion) ist. Die für Git verwendete Hashfunktion SHA-1 ist aber leider kryptographisch [unsicher](https://www.golem.de/news/hashfunktion-der-schwierige-abschied-von-sha-1-1703-127041.html). 
++ Recherchiere kurz, was eine [Hashfunktion](https://www.inf-schule.de/kommunikation/kryptologie/digitalesignatur/konzept_hashfunktion) ist. Die für Git verwendete Hashfunktion SHA-1 ist aber leider kryptographisch [unsicher](https://www.golem.de/news/hashfunktion-der-schwierige-abschied-von-sha-1-1703-127041.html). Lnagfristig ist eine Umstellung auf sicherer Hashfunktionen in Planung.
+
+{% next %}
+# Unterschiede zwischen Commits
+
+Wir öffnen die Datei `Pfannkuchen.txt` und ergänzen folgendes Rezept:
+
+```
+Zutaten:
+
+250 g Mehl
+500 ml Milch
+3 Eier
+1 Prise Salz
+Butterschmalz oder Speiseöl (z. B. Sonnenblumenöl) zum Backen
+
+Zubereitung:
+
+Eier, Milch, Mehl und Salz mit dem Schneebesen zu einem glatten, dünnflüssigen Teig verrühren. Den Pfannkuchenteig anschließend 15-20 Minuten ruhen lassen, bevor er weiter verarbeitet wird.
+Etwas Butterschmalz oder Öl in einer Pfanne (ca. 24 cm Ø) erhitzen. Ca. 1 1/2 Suppenkellen Pfannkuchenteig hineingeben und bei mittlerer Hitze ca. 3 Minuten backen, bis die Unterseite braun wird.
+Den Pfannkuchen wenden und 2-3 Minuten zu Ende backen. Den fertigen Pfannkuchen warm stellen und aus dem Teig sieben weitere Pfannkuchen ebenso zubereiten.
+```
+
+Danach führen wir einen Commit aus mit der Nachricht `"Pfannkuchenrezept ergänzt"`.
+Später bemerken wir, dass uns der Teig besser schmeckt, wenn wir 4 Eier verwenden. Außerdem löschen wir den letzte Satz unseres Rezeptes.
+
+Danach führen wir wiederum einen Commit aus (`"Korrektur Pfannkuchenrezept"`).
+
+Wenn man etwas später wissen möchte, wie sich das Rezept zwischen den beiden Versionen verändert hat, kann man jetzt mit Hilfe der Commit IDs diesen Unterschied anzeigen lassen.
+Der Terminalbefehl `git diff <CommitID1> <CommitID2>` gibt uns entsprechnde Unterschiede aus.
+
+## Aufgabe
++ Ergänze in `Literatur.txt` einige echte oder fiktive Bücher.
++ Führe einen Commit durch.
++ Lösche einzelne Bücher und ergänze andere Bücher in `Literatur.txt`.
++ Commite auch diese Änderungen.
++ Lasse Dir das Log Deines Repos ausgeben und benutze `git diff` um die Unterschiede anzeigen zu lassen.
+
+
 
 
 
