@@ -71,5 +71,13 @@ Wenn man nach einiger Zeit nachvollziehen will, wie sich ein Git Repository ver�
 + Betrachte die Commit-Historie für Dein Facharbeit-Repository.
 + Stelle eine Vermutung an, was die entsprechenden Ausgaben bedeuten.
 
+{% next %}
+# Commit ID
+
+Du hast sicherlich festgestellt, dass die Logdatei anzeigt, durch welchen User, wann ein Commit durchgeführt wurde. Anhand der Commit-Nachricht hat man auch eine Idee was evtl. passiert ist.
+
+Die erste Zeile beginnt jeweils mit der sogenannten Commit-ID, welche ein SHA-1 Hash ist. Der Wert wird berechnet, aus den vorherigen Commits, dem Autor, seiner Email und den Änderungen an den Dateien. Durch diese ID wird jeder Commit eines Repos eindeutig identifiziert.
+
+Üblicherweise reicht es für viele Git Prozesse nur einen ausreichend langen Anfang der ID zu übermitteln.
 
 
