@@ -130,8 +130,9 @@ Der Terminalbefehl `git diff <CommitID1> <CommitID2>` gibt uns entsprechnde Unte
 + Führe einen Commit durch.
 + Lösche einzelne Bücher und ergänze andere Bücher in `Literatur.txt`.
 + Commite auch diese Änderungen.
-+ Lasse Dir das Log Deines Repos ausgeben und benutze `git diff` um die Unterschiede anzeigen zu lassen.
-
++ Lasse Dir das Log Deines Repos ausgeben und notiere Dir die ersten 7 Zeichen der beiden Commits.
++ Benutze `git diff` um Dir die Unterschiede anzeigen zu lassen. 
++ Was passiert, wenn du die CommitIDs vertauschst?
 
 
 
