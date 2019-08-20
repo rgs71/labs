@@ -26,6 +26,19 @@ Mit dem entsprechdem Befehl sollte dies auch im Cmder funkionieren.
 
 Es ist immer möglich durch `git --help` eine Ausgabe der Hilfe im Terminal zu erzeugen. Jetzt verstehst du vielleicht noch nicht was die Ausgabe bedeutet, aber sobald Du mit Git vertrauter bist, kannst Du Dich so an die entsprechenden Befehle erinnern.
 
+
+{% next %}
+# Git einrichten
+
+Damit man später mit Git sinnvoll arbeiten kann, ist es notwendig einen Benutzer mit Email anzulegen. Sinnvollerweise verwendet man die Daten unter denen man bei Github registriert ist. Die Befehle dafür sind `git config --global user.name "Max Mustermann"` um den Namen global festzulegen. Entsprechend legt `git config --global user.email "max@mustermann.de" die Email-Adresse fest. Ohne den Parameter `--global` kann man innerhalb eines sogenannten Git Repository einen Namen und eine Email festlegen.
+
+Falls nicht standardmäßig eine farbige Terminalausgabe zu erhalten, kann man dies mit `git config color.ui true` aktivieren.
+
+## Aufgaben
++ Lege im Terminal Name und Email fest.
++ Aktiviere die farbige Ausgabe.
+
+
 {% next %}
 # Initialisieren des Git-Repository
 
