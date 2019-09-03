@@ -75,7 +75,103 @@ Das folgende GIF zeigt das Vorgehen und wie man mit Python im REPL als Taschenre
 
 Im letzten Schritt wurde über `**` die Potenz ![](https://latex.codecogs.com/gif.download?12345%5E%7B6789%7D) berechnet. Python zeigt die 27778 Stellen des Ergebnis über viele Zeilen an. Das Ergebnis ist mit ![](https://latex.codecogs.com/gif.download?1%2C4%20%5Ctimes%2010%5E%7B27777%7D) deutlich größer als Zahlen die Dein Taschenrechner darstellen kann (max. ![](https://latex.codecogs.com/gif.download?10%5E%7B99%7D))
 
+## Die drei Divisionen
+
+Python kennt die Division 
+- mit `/`, also `8 / 2`
+- mit `//`, also `9 // 2`
+- mit `%`, also `10 % 4`
+
 ## Aufgabe
 
-- Rufe im Terminal nur `python` auf.
-- D
+- Starte Python im Terminal als REPL-Sitzung.
+- Führe solange Divisionen mit den drei OPeratoren `/`, `//` und `%` aus, bis du verstanden hast, was diese Operatoren machen.
+- Es ist notwendig auch Divisionen durchzuführen, die nicht glatt aufgehen, um die Unterschiede zu sehen!
+
+{% next %}
+
+Hoffentlich hast Du herausgefunden, dass die folgenden drei Regeln gelten:
+
+1. Die Division mit `/` gibt *immer* ein Ergebnis mit Nachkommastellen. Dabei versucht Python den dezimalen Wert möglichst genau anzugeben.
+    ```python
+    >>> 25 / 6
+    4.166666666667
+    ```
+
+2. Die Division mit `//` gibt *immer* eine ganze Zahl als Ergebnis aus. Diese Zahl entspricht dem Ergebnis einer Division mit Rest (Grundschule). D.h.
+    ```python
+    >>> 25 // 6
+    4
+    ```
+
+3. Die Division mit `%` gibt auch immer eine ganze Zahl aus. Das Ergebnis dabei ist aber der Rest, den man erhalten würde, wenn man die Division mit Rest durchführt.
+
+    ```python
+    >>> 25 % 6
+    1
+    ```
+
+## Teilbatkeitsprobleme
+
+Der `%`-Operator ist damit geeignet Fragen der Teilbarkeit zu entscheiden. Falls die Divison ohne Rest aufgeht, weiß man, dass die Division glatt aufgeht und somit die Zahl teilbar ist.
+
+```python
+>>> 505844402544 % 117
+0
+```
+
+D.h. also, dass die Zahl 505844402544
+ teilbar durch 117 ist. Die folgenden Rechnungen bestätigen dies.
+
+ ```python
+>>> 505844402544 // 117
+4323456432
+>>> 505844402544 / 117
+4323456432.0
+```
+
+{% next %}
+# Halbieren von Zahlen III
+
+Jetzt können wir unser Programm so verändern, dass statt `n = n / 2` mit `n = n // 2` die Ergebnisse immer ganze Zahlen beleiben. 
+
+## Aufgabe
+
+- Führe diese Änderung durch.
+- Vergleiche, was passiert wenn Du die Startzahl 64 und die Startzahl 91 verwendest.
+
+{% next %}
+# Fallunterscheidung zwischen geraden und ungeraden Zahlen
+
+Bisher haben wir *immer* die Zahl in jedem Schritt halbiert. Der `%`-Operator gibt uns aber jetzt die Möglichkeit, zwischen geraden und ungeraden Zahlen zu entscheiden.
+Mit `n % 2 == 0` können wir überprüfen, ob unsere Zahl ohne Rest durch 2 teilbar ist, also gerade ist.
+
+Statt jetzt *immer* die Zahl zu halbieren, werden wir dies nur noch tun, wenn diese tatsächlich gerade ist.
+
+## Aufgabe
+- Ändere Deinen Code so, dass er folgende Verzweigung enthält:
+
+    ```python
+    if n % 2 == 0:
+        n = n // 2
+    else:
+        break
+    ```
+
+- Starte Dein Programm mit den Startzahlen 64 und 224.
+
+- Stelle eine Vermutung auf, was der Ausdruck `break` bewirkt.
+
+{% next %}
+# Vollständiges Programm
+
+Wenn wir jetzt statt `break` den zweiten Konstruktionsschritt für ungerade Zahlen eintragen, vervollständigen wir das Programm.
+
+Dafür müssen wir nur noch `n = 3 * n + 1` im `else`-Teil der Verzweigung eintragen. Diese Rechnung stellt sicher, dass danach immer wieder ein Halbierungsschritt möglich wird, da für jede ungerade Zahl `n` die Zahl `3 * n + 1` gerade ist.
+
+## Aufgabe
+
+- Schreibe das vollständige Programm.
+- Lasse das Programm für einige Startzahlen laufen, wo Du bereits die Collatz-Folge kennst.
+-  Finde dabei die Startzahl zwischen 5 und 15, für die die längste Zahlenfolge ausgegeben wird.
+
