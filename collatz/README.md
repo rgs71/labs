@@ -49,8 +49,8 @@ Das führt uns zu folgendem Programmcode:
 ```python
 n = 8
 while n > 1:
-    print(n)
     n = n / 2
+    print(n)
 ```
 
 ## Aufgabe
@@ -61,3 +61,19 @@ while n > 1:
 - Was fällt dir bei den ausgegebenen Zahlen auf?
 - Änder im Code den Wert von `n` und lasse auch dann das Programm laufen.
 
+{% next %}
+# Halbieren von Zahlen II
+
+Du hast sicherlich bemerkt, dass Python bei der Divison durch zwei sofort von ganzzahligen Werten auf Dezimalzahlen gewechselt ist. Dies ist aber schlecht, da *gerade* und *ungerade* Aussagen über ganze Zahlen sind.
+
+Das Problem lässt sich lösen, da Python nicht nur eine Division von Zahlen kennt.
+Man man Python auch im sogenannten REPL ausführen. Dies steht für **R**ead-**E**valuate-**P**rint-**L**oop, also einer Wiederholung (Schleife) in der ständig eingelsen wird, was der User eingibt, diese Eingabe ausgewertet wird und schließlich direkt die Antwort ausgegeben wird. Im REPL ist daher auch kein `print` notwendig, um Ergebnisse zu erhalten.
+
+Das folgende GIF zeigt das Vorgehen und wie man mit Python im REPL als Taschenrechner arbeiten kann.
+
+![REPL](repl.gif)
+
+## Aufgabe
+
+- Rufe im Terminal nur `python` auf.
+- D
