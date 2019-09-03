@@ -73,6 +73,8 @@ Das folgende GIF zeigt das Vorgehen und wie man mit Python im REPL als Taschenre
 
 ![REPL](repl.gif)
 
+Im letzten Schritt wurde über `**` die Potenz $12345^{6789}$ berechnet. Python zeigt die 27778 Stellen des Ergebnis über viele Zeilen an. Das Ergebnis ist mit $1,4 \times 10^{27777}$ deutlich größer als Zahlen die Dein Taschenrechner darstellen kann (max. $10^{99}$)
+
 ## Aufgabe
 
 - Rufe im Terminal nur `python` auf.
