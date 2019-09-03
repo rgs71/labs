@@ -73,7 +73,7 @@ Das folgende GIF zeigt das Vorgehen und wie man mit Python im REPL als Taschenre
 
 ![REPL](repl.gif)
 
-Im letzten Schritt wurde über `**` die Potenz $12345^{6789}$ berechnet. Python zeigt die 27778 Stellen des Ergebnis über viele Zeilen an. Das Ergebnis ist mit $1,4 \times 10^{27777}$ deutlich größer als Zahlen die Dein Taschenrechner darstellen kann (max. $`10^{99}`$)
+Im letzten Schritt wurde über `**` die Potenz ![](https://latex.codecogs.com/gif.download?12345%5E%7B6789%7D) berechnet. Python zeigt die 27778 Stellen des Ergebnis über viele Zeilen an. Das Ergebnis ist mit ![](https://latex.codecogs.com/gif.download?1%2C4%20%5Ctimes%2010%5E%7B27777%7D) deutlich größer als Zahlen die Dein Taschenrechner darstellen kann (max. ![](https://latex.codecogs.com/gif.download?10%5E%7B99%7D))
 
 ## Aufgabe
 
