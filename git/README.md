@@ -136,4 +136,3 @@ Der Terminalbefehl `git diff <CommitID1> <CommitID2>` gibt uns entsprechnde Unte
 
 
 
-
