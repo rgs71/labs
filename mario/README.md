@@ -23,7 +23,7 @@ Danach statt mit User/Password mit User/Token anmelden!
 {% next %}
 ## Arbeiten mit Strings
 
-In de Informatik werden Zeichenketten als Strings bezeichnet. Im Quellcode der meisten Programmiersprachen werden Strings durch Hochkommata dargestellt. D.h. `103` ist die ganze Zahl 103, aber `103` ist die Zeichenfolge, welche die Symbole 1, 0 und 3 enthält.
+In de Informatik werden Zeichenketten als Strings bezeichnet. Im Quellcode der meisten Programmiersprachen werden Strings durch Hochkommata dargestellt. D.h. `103` ist die ganze Zahl 103, aber `"103"` ist die Zeichenfolge, welche die Symbole 1, 0 und 3 enthält.
 
 In einer Python REPL Sitzung kann man entsprechendes sehen:
 
