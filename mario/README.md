@@ -27,9 +27,9 @@ In de Informatik werden Zeichenketten als Strings bezeichnet. Im Quellcode der m
 
 In einer Python REPL Sitzung kann man entsprechendes sehen:
 
-![Python REPL](repl.gif)
+![Python REPL](relp.gif)
 
-Einmal wird die Größe `i = 103` als Integer (`int`) , das andere Mal die Größe `s` als String (`str`).
+Einmal wird die Größe `i = 103` als Integer (`int`) , das andere Mal die Größe `s = "103"` als String (`str`).
 
 ### Aufgabe
 
