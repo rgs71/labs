@@ -97,7 +97,7 @@ Als erstes fügen wir dafür in den Strings die wir ausgeben entsprechend viele 
 {% next %}
 ## Leerzeichen statt Punkte
 
-Python kennt auch das Leerzeichen als String. Statt `.` kann man `" "` benutzen, damit man die Hilfspunkte verstecken kann.
+Python kennt auch das Leerzeichen als String. Statt `"."` kann man `" "` benutzen, damit man die Hilfspunkte verstecken kann.
 
 ```python
       #
