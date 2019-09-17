@@ -29,7 +29,7 @@ In einer Python REPL Sitzung kann man entsprechendes sehen:
 
 ![Python REPL](relp.gif)
 
-Einmal wird die Größe `i = 103` als Integer (`int`) , das andere Mal die Größe `s = "103"` als String (`str`).
+Einmal wird die Größe `i = 103` als Integer (`int`) , das andere Mal die Größe `s = "103"` als String (`str`) erkannt.
 
 ### Aufgabe
 
