@@ -1,6 +1,5 @@
 # Super Mario
 
-**Ich arbeite noch am Lab :-(**
 
 ## Git verbinden
 
